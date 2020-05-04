@@ -1,0 +1,254 @@
+<!DOCTYPE HTML>
+<!--
+	Read Only by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Janice Xu</title>
+		<link rel = "icon" type = "images/icon.png" href = "images/icon.png"> 
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<section id="header">
+				<header>
+					<span class="image avatar"><img src="images/circle.jpg" alt="" /></span>
+					<h1 id="logo"><a href="#">Janice Xu</a></h1>
+					<p>Computer Science | Business Student<br />
+					Physical Literacy Enthusiast</p>
+				</header>
+				
+				<nav id="nav">
+					<ul>
+						<li><a href="#one" class="active">About</a></li>
+						<li><a href="#two">Skills & Interests</a></li>
+						<li><a href="#tabs">Experience</a></li>
+						<li><a href="#three">Personal Blog + Projects</a></li>
+						<li><a href="#five">Contact</a></li>
+					</ul>
+				</nav>
+				<footer>
+					<ul class="icons">
+						<li><a href="https://www.linkedin.com/in/janicexu16/" class="icon brands fa-linkedin"><span class="label">Twitter</span></a></li>
+						<li><a href="https://github.com/janicexu16" class="icon brands fa-github"><span class="label">Github</span></a></li>
+						<li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+					</ul>
+				</footer>
+				
+			</section>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- One -->
+							<section id="one">
+								<div class="image main" data-position="center">
+									<img src="images/bannereurope3.png" alt="" />
+								</div>
+								<div class="container">
+									<header class="major">
+										<h2>Do What You Love <br />
+										Love What You Do</h2>
+										<p>Hello! My name is Janice Xu</p>
+									</header>
+									<p>I'm an aspiring Computer Science student at Western University with the interest in pursuing a dual
+degree with an Honours Business Administration at the Ivey School of Business. Loving to learn about the intersection between the business and technology industries, such as FinTech, and developing softwares with artificial intelligence to facilitate daily tasks.</p>
+
+
+								</div>
+							</section>
+
+						<!-- Two -->
+							<section id="two">
+								<div class="container">
+									<h3>Skills & Interests</h3>
+									<p>Integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer non. Adipiscing cubilia elementum integer lorem ipsum dolor sit amet.</p>
+									<ul class="feature-icons">
+										<li class="icon solid fa-code">Java</li>
+										<li class="icon solid fa-cubes">Adobe</li>
+										<li class="icon solid fa-book">Python</li>
+										<li class="icon solid fa-coffee">Baking Expert</li>
+										<li class="icon solid fa-bolt">Microsoft Office</li>
+										<li class="icon solid fa-users">Dragon Boat Athlete</li>
+									</ul>
+								</div>
+							</section>
+
+							<section id ="tabs">
+								<div class="container">
+									<h3>Experience</h3>
+								</div>
+								<div class = "tabs">
+
+									<div class = "tabs__sidebar">
+										<button class = "tabs__button" data-for-tab = "1"> Camp Supervisor </button>
+										<button class = "tabs__button" data-for-tab = "2"> Leadership in Training </button>
+										<button class = "tabs__button" data-for-tab = "3"> CAISA Fashion Show </button>
+										<button class = "tabs__button" data-for-tab = "4"> Markham Mayor's Youth Council </button>
+									</div>
+									<div class = "tabs__content" data-tab ="1">
+										<h3> Camp Supervisor </h3>
+										<h4><i>City of Markham</i></h4>
+									
+											<li>Took on a managerial role by coordinating 4 camp counsellors to successfully facilitate the execution of several badminton related camp activities</li>
+											<li>Program planned 7 weeks of activities, including the invitation of external special guests: York Region Police & Fire Department, Hands On Exotics and badminton specialist. </li>
+											<li>Coordinated communication between camp counsellors, parents and full time staff to ensure safety and enjoyment of all camp participants</li>
+										
+									</div>
+									<div class = "tabs__content" data-tab ="2">
+										<h3> Leadership in Training </h3>
+										<h4><i>City of Richmond Hill</i></h4>
+										<li>Responsible for educating a group of youth on the appropriate protocols and procedures to become employed with the City of Richmond Hill. </li>
+										<li>Facilitated lesson plans and taught the proper steps for activity execution.</li>
+										<li>Developed a final exam to ensure participants exit the classroom with newfound, applicable.</li>
+									</div>
+									<div class = "tabs__content" data-tab ="3">
+										<h3> CAISA Fashion Show </h3>
+										<h4><i>Western University</i></h4>
+
+										<li>Facilitated the internal social bonds between executives and models through fun games, socials and friendly competitions.</li>
+									<li>Attended weekly meetings to help with the planning for Canada's largest student run fashion show, raising over $350 000 for Children's Health Foundation.</li>
+									</div>
+
+									<div class = "tabs__content" data-tab ="4">
+										<h3> Markham Mayor's Youth Council </h3>
+										<h4><i>Co-Chair</i></h4>
+
+										<li>Coordinated a team of 25 by leading meetings by creating agendas and meeting minutes as well as communicating with city staff to execute 6 events to encourage youth involvement.</li>
+									<li>Spearheaded the logistical organization of events by coordinating room bookings and keeping teams on track as such</li>
+									<li>Organized the largest youth run event in the city, Markham Expo, to promote youth involvement with a series of on-stage competitions, off-stage activities, food trucks, vendors and an indoor volunteer fair.</li>
+									</div>
+								</div>
+							
+
+								
+								<script>
+									function setupTabs(){
+										document.querySelectorAll(".tabs__button").forEach(button => {
+											button.addEventListener("click", () =>{
+												const sideBar = button.parentElement;
+												const tabsContainer = sideBar.parentElement;
+												const tabNumber = button.dataset.forTab;
+												const tabToActivate = tabsContainer.querySelector (`.tabs__content[data-tab="${tabNumber}"]`);
+
+												sideBar.querySelectorAll(".tabs__button").forEach(button =>{
+													button.classList.remove("tabs__button--active");
+
+												});
+
+												tabsContainer.querySelectorAll(".tabs__content").forEach(tab =>{
+													tab.classList.remove("tabs__content--active");
+
+												});
+
+												button.classList.add("tabs__button--active");
+												tabToActivate.classList.add("tabs__content--active");
+													
+
+											});
+										});
+									}
+
+									document.addEventListener("DOMContentLoaded", () => {
+										setupTabs();
+
+										document.querySelectorAll(".tabs").forEach(tabsContainer =>{
+											tabsContainer.querySelector(".tabs__sidebar .tabs__button").click();
+
+										});
+
+									});
+								</script>
+
+
+						</section>
+
+						<!-- Three -->
+							<section id="three">
+								<div class="container">
+									<h3>Personal Blog + Projects</h3>
+									<p>An anecdote on how I survived my first year in a program I've never experienced before September 2019.</p>
+									<div class="features">
+										<article>
+											<a href="article1.html" class="image"><img src="images/uwo.jpg" alt="" /></a>
+											<div class="inner">
+												<h4>Things I Learned in My First Year of University</h4>
+												<p>10 Lessons I've learned to shape me into who I am today</p>
+											</div>
+										</article>
+										<article>
+											<a href="article2.html" class="image"><img src="images/egg.jpg" alt="" /></a>
+											<div class="inner">
+												<h4>Top Quarantine Stress Baking Inspiration</h4>
+												<p>All the possible desserts one could imagine! <br> Coming Soon! </br></p>
+											</div>
+										</article>
+										<article>
+											<a href="article3.html" class="image"><img src="images/snake.png" alt="" /></a>
+											<div class="inner">
+												<h4>CS Steps to Success</h4>
+												<p>My journey venturing into the unknown. <br> Coming Soon! </br></p>
+											</div>
+										</article>
+									</div>
+								</div>
+							</section>
+
+						
+
+						<!-- Four -->
+							<section id="five">
+								<div class="container">
+									<h3>Contact Me</h3>
+									<p>Integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer non. Adipiscing cubilia elementum integer. Integer eu ante ornare amet commetus.</p>
+									<form action="https://formspree.io/mjveqobz" method="POST">
+										<div class="row gtr-uniform">
+											<div class="col-6 col-12-xsmall"><input type="text" name="name" id="name" placeholder="Name" /></div>
+											<div class="col-6 col-12-xsmall"><input type="email" name="email" id="email" placeholder="Email" /></div>
+											<div class="col-12"><input type="text" name="subject" id="subject" placeholder="Subject" /></div>
+											<div class="col-12"><textarea name="message" id="message" placeholder="Message" rows="6"></textarea></div>
+											<div class="col-12">
+												<ul class="actions">
+													<li><input type="submit" class="primary" value="Send Message" /></li>
+													<li><input type="reset" value="Reset Form" /></li>
+												</ul>
+											</div>
+										</div>
+									</form>
+								</div>
+							</section>
+
+
+				<!-- Footer -->
+					<section id="footer">
+						<div class="container">
+							<ul class="copyright">
+								<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							</ul>
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+
+			
+
+	</body>
+</html>
